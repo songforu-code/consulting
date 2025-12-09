@@ -177,6 +177,15 @@ ul {
     background-color: #f1f8e9;
 }
 
+.bg-soft-blue {
+    background-color: #f3f9fe;
+}
+
+/* Very soft blue */
+.bg-soft-pink {
+    background-color: #fce4ec;
+}
+
 .service-layout {
     display: flex;
     align-items: center;
