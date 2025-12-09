@@ -93,9 +93,11 @@ ul {
 }
 
 .hero-subtitle {
-    font-size: 18px;
-    color: var(--secondary-color);
+    font-size: 20px;
+    color: #333;
     margin-bottom: 60px;
+    letter-spacing: -1px;
+    word-break: keep-all;
 }
 
 /* Inquiry Grid */
@@ -430,6 +432,120 @@ ul {
 .status.pending {
     background-color: #fff3e0;
     color: #f57c00;
+}
+
+/* Case Studies Slider */
+.cases-wrapper {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.case-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.case-header h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.slider-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.case-card {
+    min-width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px) / 3);
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: none;
+}
+
+.case-tags {
+    margin-bottom: 12px;
+}
+
+.case-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.case-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+.case-metric {
+    font-size: 14px;
+    color: var(--secondary-color);
+    line-height: 1.4;
+}
+
+.metric-value {
+    color: #2e7d32;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles overrides */
 }
 
 /* Footer */
